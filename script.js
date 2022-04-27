@@ -1,3 +1,7 @@
+const calculatorEl = document.querySelector('.calculator');
+const displayEl = document.querySelector('.display');
+const btnsEl = document.querySelectorAll('btns');
+
 const operator = function (opt, ...arr) {
   let total;
 
