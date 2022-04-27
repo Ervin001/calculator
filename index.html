@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
     <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="calculator">
+      <div class="display">999999999999</div>
+      <button class="btns special clear">Clear</button>
+      <button class="btns special delete">Delete</button>
+      <button class="btns special percent">&percnt;</button>
+      <button class="btns decimal">&#46;</button>
+      <button class="btns special special divide">&divide;</button>
+      <button class="btns special multiply">&times;</button>
+      <button class="btns special subtract">&minus;</button>
+      <button class="btns special adition">&plus;</button>
+      <button class="btns equals">&equals;</button>
+
+      <buttons id="one" class="btns btn-numbers">1</buttons>
+      <buttons id="two" class="btns btn-numbers">2</buttons>
+      <buttons id="three" class="btns btn-numbers">3</buttons>
+      <buttons id="four" class="btns btn-numbers">4</buttons>
+      <buttons id="five" class="btns btn-numbers">5</buttons>
+      <buttons id="six" class="btns btn-numbers">6</buttons>
+      <buttons id="seven" class="btns btn-numbers">7</buttons>
+      <buttons id="eight" class="btns btn-numbers">8</buttons>
+      <buttons id="nine" class="btns btn-numbers">9</buttons>
+      <buttons id="zero" class="btns btn-numbers">0</buttons>
+    </div>
+  </body>
 </html>
