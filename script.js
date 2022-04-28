@@ -43,10 +43,19 @@ const btnObj = [
   nineEl,
 ];
 
+let memory = [];
+
 btnObj.forEach((btn) =>
   btn.addEventListener('click', function (e) {
-    if (!isNaN(e.target.textContent)) return console.log(+e.target.textContent);
-    if (isNaN(e.target.textContent)) return console.log(e.target.textContent);
+    if (!isNaN(e.target.textContent)) {
+      memory.push(+e.target.textContent);
+      console.log(memory.join(''));
+      return (displayEl.textContent = +e.target.textContent);
+    }
+    if (isNaN(e.target.textContent)) {
+      memory.push(e.target.textContent);
+      // return console.log(e.target.textContent);
+    }
   })
 );
 
