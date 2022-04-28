@@ -1,3 +1,8 @@
+import { create, all } from 'mathjs';
+
+const config = {};
+const math = create(all, config);
+
 const calculatorEl = document.querySelector('.calculator');
 const displayEl = document.querySelector('.display');
 const calcNode = document.querySelectorAll('.calculator');
@@ -85,3 +90,5 @@ const operator = function (opt, ...arr) {
 
   if (opt === 'divide') return div(num1, num2);
 };
+
+math.evaluate('12 / (2.3 + 0.7)');
