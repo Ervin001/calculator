@@ -10,6 +10,7 @@ const multiplyEl = document.querySelector('.multiply');
 const subtractEl = document.querySelector('.subtract');
 const additionEl = document.querySelector('.addition');
 const equalsEl = document.querySelector('.equals');
+const zeroEl = document.getElementById('zero');
 const oneEl = document.getElementById('one');
 const twoEl = document.getElementById('two');
 const threeEl = document.getElementById('three');
@@ -20,7 +21,35 @@ const sevenEl = document.getElementById('seven');
 const eightEl = document.getElementById('eight');
 const nineEl = document.getElementById('nine');
 
-console.log(oneEl);
+const btnObj = [
+  clearEl,
+  deleteEl,
+  percentEl,
+  decimalEl,
+  divideEl,
+  multiplyEl,
+  subtractEl,
+  additionEl,
+  equalsEl,
+  zeroEl,
+  oneEl,
+  twoEl,
+  threeEl,
+  fourEl,
+  fiveEl,
+  sixEl,
+  sevenEl,
+  eightEl,
+  nineEl,
+];
+
+btnObj.forEach((btn) =>
+  btn.addEventListener('click', function (e) {
+    if (!isNaN(e.target.textContent)) return console.log(+e.target.textContent);
+    if (isNaN(e.target.textContent)) return console.log(e.target.textContent);
+  })
+);
+
 const operator = function (opt, ...arr) {
   let total;
 
@@ -47,5 +76,3 @@ const operator = function (opt, ...arr) {
 
   if (opt === 'divide') return div(num1, num2);
 };
-
-console.log(operator('multiply', 22, 10));
