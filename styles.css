@@ -46,6 +46,14 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  opacity: 1;
+}
+
+.btns:hover {
+  background-color: #2b8a3e;
+  color: #fff;
+  opacity: 2;
 }
 
 .special {
@@ -57,12 +65,19 @@ body {
   color: #fff;
   font-weight: 700;
 }
+.delete:hover {
+  background-color: #e03131;
+}
 
 .clear {
   background-color: #fcc419;
   color: #2b8a3e;
   color: #fff;
   font-weight: 700;
+}
+
+.clear:hover {
+  background-color: #fab005;
 }
 
 .divide {
