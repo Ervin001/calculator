@@ -1,7 +1,6 @@
-import { create, all } from 'mathjs';
+import { sqrt } from './node_modules/mathjs';
 
-const config = {};
-const math = create(all, config);
+console.log(sqrt(-4).toString());
 
 const calculatorEl = document.querySelector('.calculator');
 const displayEl = document.querySelector('.display');
