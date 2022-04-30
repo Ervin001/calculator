@@ -16,27 +16,30 @@
   </head>
   <body>
     <div class="calculator">
-      <div class="display">0</div>
-      <button class="btns btns--0 special clear">Clear</button>
-      <button class="btns btns--1 special delete">Delete</button>
-      <button class="btns btns--2 special percent">&percnt;</button>
-      <button class="btns btns--3 decimal">&#46;</button>
-      <button class="btns btns--4 special divide">&divide;</button>
-      <button class="btns btns--5 special multiply">&times;</button>
-      <button class="btns btns--6 special subtract">&minus;</button>
-      <button class="btns btns--7 special addition">&plus;</button>
-      <button class="btns btns--8 equals">&equals;</button>
+      <div class="display">
+        <div class="previous-number"></div>
+        <div class="current-number"></div>
+      </div>
 
-      <buttons id="zero" class="btns btns--9 btn-numbers">0</buttons>
-      <buttons id="one" class="btns btns--10 btn-numbers">1</buttons>
-      <buttons id="two" class="btns btns--11 btn-numbers">2</buttons>
-      <buttons id="three" class="btns btns--12 btn-numbers">3</buttons>
-      <buttons id="four" class="btns btns--13 btn-numbers">4</buttons>
-      <buttons id="five" class="btns btns--14 btn-numbers">5</buttons>
-      <buttons id="six" class="btns btns--15 btn-numbers">6</buttons>
-      <buttons id="seven" class="btns btns--16 btn-numbers">7</buttons>
-      <buttons id="eight" class="btns btns--17 btn-numbers">8</buttons>
-      <buttons id="nine" class="btns btns--18 btn-numbers">9</buttons>
+      <button class="two-cells">Clear</button>
+      <button class="two-cells">=</button>
+      <button class="delete">Delete</button>
+      <button data-operator>&divide;</button>
+      <button data-operator>&times;</button>
+      <button data-operator>&minus;</button>
+      <button data-operator>&plus;</button>
+
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-number>0</button>
+      <button data-number>.</button>
     </div>
   </body>
 </html>
