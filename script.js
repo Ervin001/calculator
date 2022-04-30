@@ -48,13 +48,19 @@ let memory = [];
 btnObj.forEach((btn) =>
   btn.addEventListener('click', function (e) {
     if (!isNaN(e.target.textContent)) {
+      console.log(e.key);
       memory.push(+e.target.textContent);
       console.log(memory.join(''));
       return (displayEl.textContent = +e.target.textContent);
     }
-    if (isNaN(e.target.textContent)) {
+    if (isNaN(e.target.textContent || e.target.textContent == '=')) {
       memory.push(e.target.textContent);
       // return console.log(e.target.textContent);
+    }
+
+    // Equals logic
+    if (e.target.textContent === '=') {
+      console.log('pressed on equals');
     }
   })
 );
