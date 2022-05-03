@@ -12,19 +12,28 @@ class Calculator {
   constructor(previousNumEl, currentNumEl) {
     this.previousNumEl = previousNumEl;
     this.currentNumEl = currentNumEl;
+    this.clear();
   }
 
-  clear() {}
+  clear() {
+    this.previousNumEl = '';
+    this.currentNumEl = '';
+    this.operatorElNode = undefined;
+  }
 
   delete() {}
 
-  appendNumber(number) {}
+  appendNumber(number) {
+    this.currentNumEl = number;
+  }
 
   chooseOperator(operator) {}
 
   compute() {}
 
-  updateDisplay() {}
+  updateDisplay() {
+    this.currentNumEl.innerText = this.currentNumEl;
+  }
 }
 
 const calculator = new Calculator(previousNumEl, currentNumEl);
